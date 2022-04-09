@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+}
+.btn {
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 0.5rem 1.75rem;
+
+  border: none;
+  border-radius: 30px;
+
+  background-color: inherit;
+  color: #fff;
+
+  cursor: pointer;
+}
+.nav button:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.btn-logout {
+  background-color: rgb(233, 35, 167);
+}
+.btn-logout:hover {
+  background-color: rgb(238, 75, 184);
+}
