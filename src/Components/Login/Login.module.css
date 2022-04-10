@@ -1,40 +1,49 @@
-.form {
-  margin: auto 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.login {
+  width: 90%;
+  max-width: 40rem;
+
+  margin: 2rem auto;
+  padding: 2rem;
 }
+
 .form-input {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
+  align-items: stretch;
+  flex-direction: column;
+}
+.form-input label,
+.form-input input {
+  display: block;
+}
+
+.form-input label {
+  flex: 1;
+  font-size: 1.1rem;
+  font-weight: bold;
+
+  margin-bottom: 0.5rem;
 }
 .form-input input {
-  width: 80%;
+  flex: 3;
   font-size: 1.1rem;
+  padding: 0.35rem 0.35rem;
   border: 1px solid gray;
   border-radius: 5px;
 }
 .form-input input:focus {
   outline: none;
-  background-color: rgba(213, 226, 236, 0.897);
+  border-color: #4f005f;
+  background: #f6dbfc;
 }
 
-.form-input label {
-  font-size: 1.1rem;
-}
 .form-btn {
-  align-self: center;
+  margin-top: 2rem;
 }
-.form-btn-active {
-  background-color: rgb(62, 11, 109);
-  color: #fff;
+
+.form-input.invalid input {
+  border-color: red;
+  background: #fbdada;
 }
-.form-btn-active:hover,
-.form-btn-active:active {
-  background-color: rgb(89, 22, 151);
-  outline: none;
-}
-.form-btn-active:focus {
-  outline: none;
+.actions {
+  text-align: center;
 }
