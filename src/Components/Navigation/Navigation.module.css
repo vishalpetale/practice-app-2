@@ -1,6 +1,15 @@
-.nav {
+.nav ul {
   display: flex;
+  align-items: center;
 }
+.nav ul li:not(:last-child) {
+  margin-right: 2rem;
+}
+.nav ul li a {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
 .btn {
   font-size: 1.1rem;
   font-family: inherit;

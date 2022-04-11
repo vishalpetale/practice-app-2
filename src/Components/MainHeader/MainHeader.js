@@ -6,7 +6,7 @@ function MainHeader(props) {
   return (
     <header className={classes.header}>
       <h1>A Title</h1>
-      {props.isLoggedIn && <Navigation onLogout={props.onLogout} />}
+      <Navigation onLogout={props.onLogout} />
     </header>
   );
 }

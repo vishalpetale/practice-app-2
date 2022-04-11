@@ -3,6 +3,7 @@ import "./index.css";
 import MainHeader from "./Components/MainHeader/MainHeader";
 import Login from "./Components/Login/Login";
 import Home from "./Components/Home/Home";
+import AuthContext from "./store/auth-context";
 
 function App() {
   const [isLoggedIn, setIsloggedIn] = useState(false);
@@ -26,10 +27,17 @@ function App() {
     localStorage.removeItem("isLoggedIn");
   };
   return (
-    <>
-      <MainHeader isLoggedIn={isLoggedIn} onLogout={handleLogout} />
-      {!isLoggedIn ? <Login onLogin={handleLogin} /> : <Home />}
-    </>
+    <AuthContext.Provider
+      value={{
+        isLoggedIn: isLoggedIn,
+      }}
+    >
+      <MainHeader onLogout={handleLogout} />
+      <main>
+        {!isLoggedIn && <Login onLogin={handleLogin} />}
+        {isLoggedIn && <Home />}
+      </main>
+    </AuthContext.Provider>
   );
 }
 

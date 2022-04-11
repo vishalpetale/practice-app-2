@@ -1,7 +1,7 @@
 import React, { useEffect, useReducer, useState } from "react";
 import classes from "./Login.module.css";
-import Button from "../../UI/Button/Button";
-import Card from "../../UI/Card/Card";
+import Card from "../UI/Card/Card";
+import Button from "../UI/Button/Button";
 
 const emailReducer = (state, action) => {
   if (action.type === "USER_INPUT") {
@@ -54,7 +54,7 @@ function Login(props) {
     }, 1000);
 
     return () => {
-      console.log("CLear timer");
+      console.log("Clear timer");
       clearTimeout(validityTimer);
     };
   }, [emailIsValid, passwordIsValid]);
