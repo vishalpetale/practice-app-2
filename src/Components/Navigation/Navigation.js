@@ -34,11 +34,3 @@ function Navigation() {
   );
 }
 export default Navigation;
-// <button className={classes.btn}>Users</button>
-// <button className={classes.btn}>Admin</button>
-// <Button
-//   className={`${classes.btn} ${classes["btn-logout"]}`}
-//   onClick={handleLogutClick}
-// >
-//   Logout
-// </Button>
