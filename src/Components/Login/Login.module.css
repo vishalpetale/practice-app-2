@@ -6,44 +6,10 @@
   padding: 2rem;
 }
 
-.form-input {
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
-}
-.form-input label,
-.form-input input {
-  display: block;
-}
-
-.form-input label {
-  flex: 1;
-  font-size: 1.1rem;
-  font-weight: bold;
-
-  margin-bottom: 0.5rem;
-}
-.form-input input {
-  flex: 3;
-  font-size: 1.1rem;
-  padding: 0.35rem 0.35rem;
-  border: 1px solid gray;
-  border-radius: 5px;
-}
-.form-input input:focus {
-  outline: none;
-  border-color: #4f005f;
-  background: #f6dbfc;
-}
-
 .form-btn {
   margin-top: 2rem;
 }
 
-.form-input.invalid input {
-  border-color: red;
-  background: #fbdada;
-}
 .actions {
   text-align: center;
 }
